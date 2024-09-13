@@ -95,7 +95,7 @@ export default class Ball {
 			this.dx = -this.dx; // Flip x velocity.
 		}
 		// Right edge; only check if we're moving left.
-		else if (this.x > brick.x + brick.width && this.dx < 0) {
+		else if (this.x + this.width > brick.x + brick.width && this.dx < 0) {
 			this.dx = -this.dx; // Flip x velocity.
 		}
 		// Top edge if there are no X collisions.
